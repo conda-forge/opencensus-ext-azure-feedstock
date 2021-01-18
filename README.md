@@ -5,9 +5,13 @@ Home: https://github.com/census-instrumentation/opencensus-python
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opencensus-ext-azure-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenCensus Azure Monitor Exporters
+
+Development: https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-azure
+
+Documentation: https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-azure/examples
 
 OpenCensus Azure Monitor Exporters. The Azure Monitor Log Handler allows
 you to export Python logs to Azure Monitor.
@@ -119,4 +123,6 @@ Feedstock Maintainers
 =====================
 
 * [@basnijholt](https://github.com/basnijholt/)
+* [@dhirschfeld](https://github.com/dhirschfeld/)
+* [@krisevans](https://github.com/krisevans/)
 
