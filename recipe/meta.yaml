@@ -1,28 +1,28 @@
-{% set opensensus_version = "0.7.10" %}
-{% set version = "1.0.4" %}
+{% set name = "opencensus-ext-azure" %}
+{% set version = "1.0.6" %}
 
 package:
-  name: opencensus-ext-azure
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/census-instrumentation/opencensus-python/archive/v{{ opensensus_version }}.zip
-  sha256: 4ea0b5bac55c62f9ca5ddccc5acf8160c3575bf58bc5dab7bcb1f5a9cc578e71
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 39f3ad44b2ca7b1f35ea13729f9cf5cb5db8f96ea1ff4a68caf9c15b26249334
 
 build:
   noarch: python
   number: 0
-  script: "cd contrib/opencensus-ext-azure && {{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - opencensus
-    - psutil
-    - requests
+    - python >=3.6
+    - opencensus >=0.7.12,<1.0.0
+    - psutil >=5.6.3
+    - requests >=2.19.0
 
 test:
   imports:
@@ -42,3 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - basnijholt
+    - krisevans
+    - dhirschfeld
