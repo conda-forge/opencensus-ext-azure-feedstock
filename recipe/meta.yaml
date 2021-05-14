@@ -1,5 +1,5 @@
 {% set name = "opencensus-ext-azure" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4b08a5da92d935df375a9a38bbf8f6fe70713a7911bea7844c71df527c163d89
+  sha256: 7d7ccf2644c21a95dab56f317ed479799303adf7ae751ffa1c4d8ac36535f016
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - opencensus >=0.7.12,<1.0.0
+    - opencensus >=0.7.13,<1.0.0
     - psutil >=5.6.3
     - requests >=2.19.0
 
