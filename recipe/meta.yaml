@@ -1,5 +1,5 @@
 {% set name = "opencensus-ext-azure" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e9b5aa49687838c68aea6f342eaa792fb0ffbef78650bfe2b534fbf34c3d618
+  sha256: d9450dea6e1663455639162a53ac4d2644a73a5d86060a7d318f8bc707193d5a
 
 build:
   noarch: python
