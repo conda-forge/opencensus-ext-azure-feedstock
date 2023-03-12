@@ -1,5 +1,5 @@
 {% set name = "opencensus-ext-azure" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b29136b67da2645c32e9f3ba58692d63d308120ef2c32d0e048d9a5f5c3a82a4
+  sha256: 507608b77e9d8eaab6ffd5ff11b7ceb87f54e4a6a940c4b814331b4d1b034151
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
     - azure-core >=1.12.0,<2.0.0
     - azure-identity >=1.5.0,<2.0.0
-    - opencensus >=0.11.1,<1.0.0
+    - opencensus >=0.11.2,<1.0.0
     - psutil >=5.6.3
     - requests >=2.19.0
 
