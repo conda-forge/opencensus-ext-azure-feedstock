@@ -1,11 +1,11 @@
-About opencensus-ext-azure
-==========================
+About opencensus-ext-azure-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opencensus-ext-azure-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/census-instrumentation/opencensus-python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opencensus-ext-azure-feedstock/blob/main/LICENSE.txt)
 
 Summary: OpenCensus Azure Monitor Exporters
 
