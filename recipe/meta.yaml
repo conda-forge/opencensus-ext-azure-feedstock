@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 86bb1e47ce1d20acad96ad3c11f8efb2fa7ab5e9ec4896f3063d85f899490462
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - azure-core >=1.12.0,<2.0.0
     - azure-identity >=1.5.0,<2.0.0
     - opencensus >=0.11.3,<1.0.0
@@ -27,6 +27,8 @@ requirements:
     - requests >=2.19.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - opencensus.ext.azure
 
